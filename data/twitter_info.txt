@@ -1,0 +1,20 @@
+onkeypress="return validnum()"
+
+removed on txtcontact number in registration form
+
+Algorithms take vectors of numbers as input, therefore we need to convert documents to fixed-length vectors of numbers.
+
+ convert text to word count vectors with CountVectorizer.
+ convert text to word frequency vectors with TfidfVectorizer.
+ convert text to unique integers with HashingVectorizer.
+
+The CountVectorizer provides a simple way to both tokenize a collection of text documents - 
+ and build a vocabulary of known words, but also to encode new documents using that vocabulary.
+
+You can use it as follows:
+
+Create an instance of the CountVectorizer class.
+Call the fit() function in order to learn a vocabulary from one or more documents.
+Call the transform() function on one or more documents as needed to encode each as a vector.
+
+https://machinelearningmastery.com/prepare-text-data-machine-learning-scikit-learn/

@@ -1,0 +1,24 @@
+
+>>> easy_install 
+>>> import nltk
+>>> nltk.download()
+
+Hello,
+
+Please join the meeting, by clicking on this link:
+https://go.teamviewer.com/v12/m51427359
+
+Meeting ID: m51-427-359
+
+Dial: +1 213 289 3427 (0.05 $/min) to join the conference call.
+Your conference PIN: 51 427 359
+
+In order to get a list of all call-in numbers copy the following URL and paste it into your web browser's address bar:
+http://www.teamviewer.com/link/?url=301635
+
+
+Regards,
+deepa
+
+
+www.teamviewer.com - Easy online meeting & screen sharing

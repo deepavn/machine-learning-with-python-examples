@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="milk <= 0.5\nentropy = 2.382\nsamples = 70\nvalue = [28, 15, 3, 8, 3, 5, 8]\nclass = Mammals"] ;
+1 [label="feathers <= 0.5\nentropy = 2.351\nsamples = 42\nvalue = [0, 15, 3, 8, 3, 5, 8]\nclass = Birds"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="backbone <= 0.5\nentropy = 2.195\nsamples = 27\nvalue = [0, 0, 3, 8, 3, 5, 8]\nclass = Fish"] ;
+1 -> 2 ;
+3 [label="predator <= 0.5\nentropy = 0.961\nsamples = 13\nvalue = [0, 0, 0, 0, 0, 5, 8]\nclass = Invertebrates"] ;
+2 -> 3 ;
+4 [label="hair <= 0.5\nentropy = 0.65\nsamples = 6\nvalue = [0, 0, 0, 0, 0, 5, 1]\nclass = Insects"] ;
+3 -> 4 ;
+5 [label="entropy = 0.918\nsamples = 3\nvalue = [0, 0, 0, 0, 0, 2, 1]\nclass = Insects"] ;
+4 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 0, 0, 0, 0, 3, 0]\nclass = Insects"] ;
+4 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 7\nvalue = [0, 0, 0, 0, 0, 0, 7]\nclass = Invertebrates"] ;
+3 -> 7 ;
+8 [label="breathes <= 0.5\nentropy = 1.414\nsamples = 14\nvalue = [0, 0, 3, 8, 3, 0, 0]\nclass = Fish"] ;
+2 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 8\nvalue = [0, 0, 0, 8, 0, 0, 0]\nclass = Fish"] ;
+8 -> 9 ;
+10 [label="aquatic <= 0.5\nentropy = 1.0\nsamples = 6\nvalue = [0, 0, 3, 0, 3, 0, 0]\nclass = Reptiles"] ;
+8 -> 10 ;
+11 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0, 0, 0]\nclass = Reptiles"] ;
+10 -> 11 ;
+12 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 0, 0, 0, 3, 0, 0]\nclass = Amphibians"] ;
+10 -> 12 ;
+13 [label="entropy = 0.0\nsamples = 15\nvalue = [0, 15, 0, 0, 0, 0, 0]\nclass = Birds"] ;
+1 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 28\nvalue = [28, 0, 0, 0, 0, 0, 0]\nclass = Mammals"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
