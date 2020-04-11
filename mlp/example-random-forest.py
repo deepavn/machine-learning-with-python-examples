@@ -16,8 +16,8 @@ from sklearn.tree import export_graphviz
 
 # Function importing Dataset
 def importdata():
-    py_data = pd.read_csv('C:\SrinivasaSolutions_Projects\Tutorials\Projects\Python\data\zoo_data.csv')
-    py_class = pd.read_csv('C:\SrinivasaSolutions_Projects\Tutorials\Projects\Python\data\zoo_data.csv')
+    py_data = pd.read_csv('zoo_data.csv')
+    py_class = pd.read_csv('zoo_data.csv')
 
     # Printing the dataset shape
     print ("\nDataset Length: ", len(py_data))
@@ -123,7 +123,7 @@ def main():
 
     
     # VISUAL REPRESENTATION
-    with open("C:\SrinivasaSolutions_Projects\Tutorials\Projects\Python\data\dt_train_randomforest.txt", "w") as z:
+    with open("C:\tmp\dt_train_randomforest.txt", "w") as z:
        z = export_graphviz(clf_randomforest.estimators_[5], 
                         out_file=z, 
                         feature_names=data_feature_names,
