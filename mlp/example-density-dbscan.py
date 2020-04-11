@@ -13,7 +13,7 @@ from sklearn.preprocessing import StandardScaler
 # Function importing Dataset
 def importdata():
     py_class = ['Distance_Feature','Speeding_Feature']
-    py_data = pd.read_csv('C:\SrinivasaSolutions_Projects\Tutorials\Projects\Python\data\drivers_data.csv', header=None,  names=py_class)
+    py_data = pd.read_csv('drivers_data.csv', header=None,  names=py_class)
     
     #Clean
     py_data = py_data.fillna(0)
